@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@layer components {
+  /*containers*/
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-5 lg:px-36 3xl:px-36;
+  }
+
+  .padding-container-header {
+    @apply px-5 lg:pl-[6.6rem] lg:pr-[7.5rem] 3xl:px-32;
+  }
+
+  /*btn*/
+
+  .btn_white {
+    @apply rounded-md border-none bg-white px-5 py-2.5 text-primary;
+  }
+
+  .btn_white_text {
+    @apply rounded-md border-none bg-primary px-5 py-2.5 text-white;
+  }
+
+  .btn_green {
+    @apply rounded border-none bg-primary px-8 py-3.5 text-white;
+  }
+}
+
+@layer utilities {
+  /*flex*/
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
+
+  .flexAround {
+    @apply flex items-center justify-around;
+  }
+
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexBaseLine {
+    @apply flex items-baseline justify-between;
+  }
+
+  .flexStart {
+    @apply flex items-start justify-between;
+  }
+
+  .flexEnd {
+    @apply flex items-center justify-end;
+  }
+
+  /*font*/
+  .semibold {
+    @apply font-inter text-[4rem] font-semibold leading-tight;
+  }
+
+  .semibold-mobile {
+    @apply font-inter text-[2rem] font-semibold leading-10;
+  }
+
+  .subTiles {
+    @apply text-4xl font-semibold leading-tight text-neutral-200;
+  }
+
+  .descriptionText {
+    @apply text-center text-base text-neutral-200;
+  }
+
+  .cardTitle {
+    @apply text-center text-lg font-semibold text-neutral-200;
+  }
+
+  .cardText {
+    @apply text-center text-sm text-neutral-200;
+  }
+}
+
